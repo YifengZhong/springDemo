@@ -5,6 +5,8 @@ package com.study.springdemo;
 public class CricketCoach implements Coach {
 	
 	private FortuneService fortuneService;
+	private String emailAddress;
+	private String team;
 	
 	//create a no-arg constructor
 	public CricketCoach() {
@@ -26,5 +28,22 @@ public class CricketCoach implements Coach {
 		System.out.println("CricketCoach: inside Setter method setFortuneService");
 		this.fortuneService = fortuneService;
 	}
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CricketCoach: inside Setter setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+	public void setTeam(String team) {
+		System.out.println("CricketCoach: inside Setter method setTeam");
+		this.team = team;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
 
 }

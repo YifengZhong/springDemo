@@ -29,8 +29,10 @@
     	class="com.study.springdemo.CricketCoach">
     	<!--Configure the dependency injection in spring config file-->
     	<property name="fortuneService" ref="myFortuneService" /> <!--Inect dependency into the class  -->
+    	<property name="emailAddress" value="theBestCoach@gamil.com" /> <!--Inect dependency into the class  -->
+    	<property name="team" value="Sunrisers Hyderabad" /> <!--Inect dependency into the class  -->
     </bean>
-</beans>
+	</beans>
 
 
 
