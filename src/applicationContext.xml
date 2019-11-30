@@ -17,12 +17,18 @@
  -->    
     <bean id="myCoach"
         class="com.study.springdemo.TrackCoach">
-		    <!--set up constructor injection  -->
-        	<constructor-arg ref="myFortuneService" />       <!--Inect dependency into the class  -->
+	    <!--set up constructor injection  -->
+       	<constructor-arg ref="myFortuneService" />       <!--Inect dependency into the class  -->
     </bean>
     <!--Define the dependency  -->
     <bean id ='myFortuneService'
     	class="com.study.springdemo.HappyFortuneService">
+    </bean>
+    
+    <bean id="myCricketCoach"
+    	class="com.study.springdemo.CricketCoach">
+    	<!--Configure the dependency injection in spring config file-->
+    	<property name="fortuneService" ref="myFortuneService" /> <!--Inect dependency into the class  -->
     </bean>
 </beans>
 
