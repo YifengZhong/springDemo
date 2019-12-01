@@ -11,7 +11,9 @@
     
 
     <bean id="myCoach"
-        class="com.study.springdemo.TrackCoach">
+        class="com.study.springdemo.TrackCoach"
+        scope="prototype">
+        
 	    <!--set up constructor injection  -->
        	<constructor-arg ref="myFortuneService" />       <!--Inject dependency into the class  -->
     </bean>
